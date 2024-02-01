@@ -19,7 +19,7 @@ const PokeCard = ({ url }) => {
   const handleClick = () => {
     navigate(`/pokedex/${pokemon.name}`);
   };
-  console.log(pokemon)
+  
   return (
     <article
       onClick={handleClick}

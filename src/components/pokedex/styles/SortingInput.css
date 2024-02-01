@@ -1,0 +1,23 @@
+/* SortingInput.css */
+.sorting-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  margin-right: 10px;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}

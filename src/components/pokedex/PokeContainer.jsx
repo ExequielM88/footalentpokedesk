@@ -10,7 +10,7 @@ const PokeContainer = ({ FormUrl }) => {
 
   useEffect(() => {
     getAllPokemons();
-  }, [FormUrl]);
+  }, [getAllPokemons, FormUrl]);
 
   const sortedPokemons = pokemons?.results?.slice().sort((a, b) => {
     const idA = parseInt(a.url.split('/').slice(-2, -1)[0]);

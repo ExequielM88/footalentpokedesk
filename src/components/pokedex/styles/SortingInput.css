@@ -2,7 +2,10 @@
 .sorting-input-container {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  justify-content: center;
+
 }
 
 label {

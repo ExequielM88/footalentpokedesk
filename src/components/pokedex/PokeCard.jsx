@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect} from 'react';
 import useFetch from '../../hooks/useFetch';
 import { useNavigate } from 'react-router-dom';
 import "./styles/pokecard.css";
@@ -13,7 +13,7 @@ const PokeCard = ({ url }) => {
   useEffect(() => {
       
     getPokeById(url);
-  }, []);
+  }, [getPokeById, url]);
   
   const navigate = useNavigate();
   const handleClick = () => {
@@ -50,18 +50,3 @@ const PokeCard = ({ url }) => {
 
 export default PokeCard;
 
-/*<ul className="pokemon_stats">
-{pokemon?.stats.map((objStats) => (
-  <li className="pokemon_stats_specifit" key={objStats.stat.url}>
-    <span className="pokemon_stats_name">{objStats.stat.name}</span>
-    <span className="pokemon_stats_value">{objStats.base_stat}</span>
-  </li>
-))}
-</ul>
-<ul className="pokemon_type">
-          {pokemon?.types.map((objType) => (
-            <li className="pokemon_type_specifit" key={objType.type.url}>
-              {objType.type.name}
-            </li>
-          ))}
-        </ul>*/

@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import useFetch from '../hooks/useFetch';
 import ProgressBar from "@ramonak/react-progress-bar";
-import HeaderPoke from "../components/Header/HeaderPoke";
+import HeaderPoke from "../components/header/HeaderPoke";
 import "./styles/pokeInfo.css";
 import FooterPoke from '../components/footer/FooterPoke';
 
@@ -17,7 +17,7 @@ const PokeInfo = () => {
   
   useEffect(() => {
     getPokemonByName()
-  }, [name])
+  }, [getPokemonByName, name])
   
   return (
     <div >

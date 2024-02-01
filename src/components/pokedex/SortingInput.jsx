@@ -1,5 +1,4 @@
-// SortingInput.jsx
-import React from 'react';
+import "./styles/SortingInput.css"
 
 const SortingInput = ({ sortOrder, handleSortOrderChange }) => {
   const handleOrderChange = (event) => {
